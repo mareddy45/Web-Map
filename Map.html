@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_a782aaf748ea4d659317fdb4a98deb66 {
+                #map_5334438641e84493a2861278eb11bb09 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,17 +35,17 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_a782aaf748ea4d659317fdb4a98deb66" ></div>
+            <div class="folium-map" id="map_5334438641e84493a2861278eb11bb09" ></div>
         
 </body>
 <script>    
     
-            var map_a782aaf748ea4d659317fdb4a98deb66 = L.map(
-                "map_a782aaf748ea4d659317fdb4a98deb66",
+            var map_5334438641e84493a2861278eb11bb09 = L.map(
+                "map_5334438641e84493a2861278eb11bb09",
                 {
-                    center: [38.0, -99.0],
+                    center: [17.385, 78.486],
                     crs: L.CRS.EPSG3857,
-                    zoom: 10,
+                    zoom: 6,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -55,9 +55,34 @@
 
         
     
-            var tile_layer_59389d3c5e5148149687d8e70b4c264c = L.tileLayer(
+            var tile_layer_95976f97c1254ad5850044c6c12bc58e = L.tileLayer(
                 "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
                 {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_a782aaf748ea4d659317fdb4a98deb66);
+            ).addTo(map_5334438641e84493a2861278eb11bb09);
         
+    
+            var marker_9af2bc68646e46ca9fed2d33dcb2397f = L.marker(
+                [17.385, 78.486],
+                {}
+            ).addTo(map_5334438641e84493a2861278eb11bb09);
+        
+    
+            var icon_34517030fc9944669748def013a4df5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9af2bc68646e46ca9fed2d33dcb2397f.setIcon(icon_34517030fc9944669748def013a4df5d);
+        
+    
+        var popup_e78e3f91d4354e459ee54dbaa9f9dbba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_456bbefb55af4772997e49fd3eea2058 = $(`<div id="html_456bbefb55af4772997e49fd3eea2058" style="width: 100.0%; height: 100.0%;">Birth Place</div>`)[0];
+            popup_e78e3f91d4354e459ee54dbaa9f9dbba.setContent(html_456bbefb55af4772997e49fd3eea2058);
+        
+
+        marker_9af2bc68646e46ca9fed2d33dcb2397f.bindPopup(popup_e78e3f91d4354e459ee54dbaa9f9dbba)
+        ;
+
+        
+    
 </script>
